@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Registration Form</title>
+    <link rel="stylesheet" href="/regForm.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            
+            <div class="FirstName">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span id="firstNameError" class="error"></span>
+            </div>
+
+         
+            <div class="LastName">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span id="lastNameError" class="error"></span>
+            </div>
+
+           
+            <div class="Email">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+
+           
+            <div class="ContactNumber">
+                <label for="contactNumber">Contact Number <span class="required">*</span></label>
+                <input type="text" id="contactNumber" name="contactNumber" required>
+                <span id="contactNumberError" class="error"></span>
+            </div>
+
+            <div class="Date">
+                <label for="dob">Date of Birth <span class="required">*</span></label>
+                <input type="date" id="dob" name="dob" required>
+                <span id="dobError" class="error"></span>
+            </div>
+
+            
+            <div class="pwd">
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+
+           
+            <div class="confirmpwd">
+                <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+
+           
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="terms"> I accept the Terms & Conditions <span class="required">*</span>
+                </label>
+                <div id="termsContent">
+                    Terms & Conditions: <span id="partialTerms">This is a short preview of the terms and conditions...</span> 
+                    <span id="moreTerms" style="display:none;"><br>1. Acceptance of Terms:<br>
+                        By registering on our platform, you agree to comply with and be bound by these Terms and Conditions, as well as any other policies, rules, or guidelines that we may implement from time to time. If you do not agree with any part of these terms, you must not proceed with the registration.
+<br>
+                    2. Eligibility:<br>
+                     You must be at least [insert minimum age, e.g., 18 years old] to register on this platform. By registering, you represent that you meet the eligibility requirements.
+<br>
+                    3. Registration Process:<br>
+                    To register, you are required to provide accurate and complete information. Any information you provide must be kept up-to-date.
+                    You are responsible for maintaining the confidentiality of your account and password. You agree to notify us immediately of any unauthorized use of your account.
+                    <br>
+                    4. Privacy:<br>
+                    We respect your privacy. All personal information provided during registration is subject to our Privacy Policy, which can be found [insert link to Privacy Policy].
+                    <br>
+                    5. Account Suspension and Termination:<br>
+                    We reserve the right to suspend or terminate your account at any time, with or without notice, for any reason including violation of these Terms and Conditions or any other policy.
+                    <br>
+                    6. Intellectual Property:<br>
+                    All content provided on this platform, including logos, text, graphics, and software, is the property of the platform or its licensors. You may not copy, reproduce, or distribute any content without express permission.
+                    <br>
+                    7. Limitation of Liability:<br>
+                    We are not liable for any direct, indirect, incidental, or consequential damages that may arise from your use of or inability to use the platform. Your use of the platform is at your own risk.
+                    <br>
+                    8. Modifications:<br>
+                    We reserve the right to modify these Terms and Conditions at any time. Any changes will be effective upon posting on the platform. Your continued use of the platform after the changes have been posted constitutes your acceptance of the modified Terms and Conditions.
+                    <br>
+                    9. Governing Law:<br>
+                    These Terms and Conditions are governed by the laws of [insert jurisdiction]. Any disputes arising from these Terms will be subject to the exclusive jurisdiction of the courts in [insert location].
+                    <br>
+                    10. Contact Information:<br>
+                    If you have any questions or concerns about these Terms and Conditions, please contact us at xxxxx-xxxxx.
+</span>
+                    <a href="#" id="toggleTerms">Read more</a>
+                </div>
+                <span id="termsError" class="error"></span>
+            </div>
+
+          
+            <div class="form-group buttons">
+                <input type="submit" value="Submit">
+                <input type="button" value="Clear" onclick="clearForm()">
+            </div>
+        </form>
+    </div>
+
+    <script src="/regForm.js"></script>
+</body>
+</html>
